@@ -1,0 +1,62 @@
+/* Styles for input bar */
+
+.add-todo-input {
+	margin-bottom: 15px;
+	margin-top: 15px;
+	display: flex;
+}
+.add-todo-input input {
+	border-radius: 4px;
+	border-style: solid;
+	border-color: rgb(176, 176, 176);
+	border-width: 1px;
+	text-decoration: none;
+	outline: none;
+	padding: 3px 8px 3px 8px;
+}
+.add-todo-input .title-input::placeholder, .add-todo-input .date-picker {
+	color: grey;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.add-todo-input .title-input {
+	flex: 2;
+}
+.add-todo-input .date-picker {
+	flex: 1;
+	margin-left: 2px;
+	cursor: text;
+}
+.add-todo-input .todo-submit {
+	margin-left: 2px;
+	background-color: blueviolet;
+	color: white;
+	border-width: 0;
+	font-size: 30px;
+	padding: 0px 8px 0px 8px;
+	transition: 0.15s;
+	border-radius: 4px;
+	cursor: pointer;
+}
+.todo-submit:hover {
+	opacity: 0.75;
+}
+.todo-submit:active {
+	opacity: 0.6;
+}
+
+/* Reactive Styles */
+
+@media (max-width: 819px) {
+	.add-todo-input {
+		flex-direction: column;
+	}
+	.add-todo-input .date-picker {
+		margin-left: 0px;
+		margin-top: 3px;
+		margin-bottom: 3px;
+	}
+	.add-todo-input .todo-submit {
+		margin: 0px;
+		font-size: 20px;
+	}
+}

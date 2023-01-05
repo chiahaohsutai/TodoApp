@@ -1,0 +1,21 @@
+.todo-options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    margin-top: 15px;
+}
+.clear-btn {
+    font-size: 12px;
+    border-width: 0px;
+    color: white;
+    background-color: blueviolet;
+    border-radius: 4px;
+    padding: 4px 8px 4px 8px;
+}
+.clear-btn:hover {
+    opacity: 0.75;
+}
+.clear-btn:active {
+    opacity: 0.6;
+}

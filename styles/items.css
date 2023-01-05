@@ -1,0 +1,97 @@
+.todo-list-wrapper {
+	flex: 1;
+	overflow: auto;
+}
+
+.todo-list {
+	font-size: 12px;
+	overflow: auto;
+}
+
+.todo-list .todo {
+	background-color: rgb(240, 240, 240);
+	padding: 6px 9px 6px 9px;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+	font-size: 12px;
+	display: flex; 
+	align-items: center; 
+	margin-bottom: 5px;
+}
+.todo-list .todo-title {
+	display: flex;
+	align-items: center;
+	width: 90%;
+
+}
+.todo-list .btns-container {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	opacity: 0;
+	display: flex;
+	align-items: center;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+.todo:hover .btns-container {
+	opacity: 1;
+}
+
+.todo-title .todo-text-container {
+	display: flex;
+	justify-content: space-between;
+	flex: 2;
+}
+
+.todo-list .del-btn,
+.todo-list .edit-btn,
+.todo-list .update-btn {
+	border-width: 0;
+	height: 20px;
+	padding-left: 6px;
+}
+.del-img:hover, 
+.edit-img:hover,
+.update-img:hover {
+	opacity: 0.75;
+}
+
+/* Styles for edit and Del btns */
+
+.del-img, .edit-img, .update-img {
+	height: 100%;
+	cursor: pointer;
+}
+
+.update-date {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+}
+.due-date-con {
+	min-width: 70px;
+	display: flex;
+	align-items: center;
+}
+.update-input-text {
+	flex: 1;
+	margin-right: 6px;
+}
+.update-input-text::placeholder {
+	font-size: 12px;
+}
+
+@media (max-width: 819px) {
+	.todo-list .del-btn,
+	.todo-list .edit-btn,
+	.todo-list .update-btn {
+		border-width: 0;
+		height: 15px;
+		padding-left: 6px;
+	}
+	.todo-list .todo-title {
+		width: 100%;
+	}
+}

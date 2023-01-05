@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Chia's ToDo App
+		</title>
+		<link rel="stylesheet" href="styles/general.css"/>
+		<link rel="stylesheet" href="styles/input.css"/>
+		<link rel="stylesheet" href="styles/items.css"/>
+		<link rel="stylesheet" href="styles/options.css"/>
+	</head>
+	<body>
+		<main class="todo-container">
+			<section>
+				<h1>
+					Todo App
+				</h1>
+			</section>
+			<section>
+				<div class="add-todo-input">
+					<input class="title-input" id="new-todo-title" type="text" placeholder="Add your new todo">
+					<input class="date-picker" id="date-picker" type="date">
+					<button class="todo-submit" onclick="addTodo()">
+						&plus;
+					</button>
+				</div>
+			</section>
+			<section class="todo-list-wrapper">
+				<div class="todo-list" id="todo-list"></div>
+			</section>
+			<section>
+				<div class="todo-options" id="todo-options">
+					<div class="remaining-tasks" id="remaining"></div>
+					<button onclick="clearTodos()" class="clear-btn">
+						Clear All
+					</button>
+				</div>
+			</section>
+		</main>
+		<script type="text/javascript" src="js/model.js"/></script>
+		<script type="text/javascript" src="js/controller.js"></script> 
+		<script type="text/javascript" src="js/view.js"></script>
+	</body>
+</html>
