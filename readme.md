@@ -12,4 +12,5 @@ The page is fully responsive and uses HTML, CSS and JavaScript to bring the appl
 -	Open todo.html
 
 Image of the application:
+
 ![Screenshot 2023-01-04 at 9 20 11 PM](https://user-images.githubusercontent.com/89400862/210686815-91425b64-176a-46c5-a2f5-3fda9cbbd387.png)
